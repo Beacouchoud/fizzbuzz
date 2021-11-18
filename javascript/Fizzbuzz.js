@@ -1,9 +1,9 @@
 const isFizz = (number) => {
-    return number % 3 == 0
+    return number % 3 == 0 || number.toString().includes('3');
 }
 
 const isBuzz = (number) => {
-    return number % 5 == 0
+    return number % 5 == 0 || number.toString().includes('5');
 }
 
 const Fizzbuzz = (number) => {

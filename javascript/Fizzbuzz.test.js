@@ -28,16 +28,16 @@ describe('Fizzbuzz', () => {
     expect(result).toBe('8');
   });
 
-  it.skip('returns Fizz if a number is divisible by 3 or has a 3 in it', () => {
-    const result = Fizzbuzz(13);
+  it('returns Fizz if a number is divisible by 3 or has a 3 in it', () => {
+    const result = Fizzbuzz(53);
 
-    expect(result).toBe('Fizz');
+    expect(result).toContain('Fizz');
   });
 
-  it.skip('returns Buzz if a number is divisible by 5 or has a 5 in it', () => {
+  it('returns Buzz if a number is divisible by 5 or has a 5 in it', () => {
     const result = Fizzbuzz(51);
 
-    expect(result).toBe('Buzz');
+    expect(result).toContain('Buzz');
   });
 
 });
